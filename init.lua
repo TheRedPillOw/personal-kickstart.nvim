@@ -286,9 +286,11 @@ require('lazy').setup({
 
   { --preview for typst markup (lsp is tinymist)
     'chomosuke/typst-preview.nvim',
-    lazy = false, -- or ft = 'typst'
+    ft = 'typst',
     version = '1.*',
-    opts = {}, -- lazy.nvim will implicitly calls `setup {}`
+    opts = {
+      open_cmd = 'firefox %s -P typst-preview --class typst-preview',
+    }, -- lazy.nvim will implicitly calls `setup {}`
   },
 
   -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
