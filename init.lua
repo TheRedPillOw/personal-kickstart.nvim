@@ -687,6 +687,7 @@ require('lazy').setup({
             semanticTokens = 'disable',
           },
         },
+        jdtls = {},
         -- clangd = {},
         -- gopls = {},
         -- pyright = {},
